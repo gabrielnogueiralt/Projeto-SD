@@ -1,0 +1,17 @@
+Fitter Status : Successful - Wed Dec 11 13:39:42 2019
+Quartus II 64-Bit Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
+Revision Name : ProjetoSDU2
+Top-level Entity Name : CPU
+Family : Stratix II
+Device : EP2S15F484C3
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 16 / 12,480 ( < 1 % )
+    Dedicated logic registers : 8 / 12,480 ( < 1 % )
+Total registers : 8
+Total pins : 34 / 343 ( 10 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 419,328 ( 0 % )
+DSP block 9-bit elements : 0 / 96 ( 0 % )
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 2 ( 0 % )

@@ -1,0 +1,210 @@
+|CPU
+clock => clock~0.IN5
+Tx[0] <= Tx[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+Tx[1] <= Tx[1]~0.DB_MAX_OUTPUT_PORT_TYPE
+Ty[0] <= Ty[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+Ty[1] <= Ty[1]~0.DB_MAX_OUTPUT_PORT_TYPE
+Tz[0] <= Tz[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+Tz[1] <= Tz[1]~0.DB_MAX_OUTPUT_PORT_TYPE
+Tula <= Tula~0.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[0] <= ULAout[0]~3.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[1] <= ULAout[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[2] <= ULAout[2]~1.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[3] <= ULAout[3]~0.DB_MAX_OUTPUT_PORT_TYPE
+outX[0] <= outX[0]~3.DB_MAX_OUTPUT_PORT_TYPE
+outX[1] <= outX[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+outX[2] <= outX[2]~1.DB_MAX_OUTPUT_PORT_TYPE
+outX[3] <= outX[3]~0.DB_MAX_OUTPUT_PORT_TYPE
+outY[0] <= outY[0]~3.DB_MAX_OUTPUT_PORT_TYPE
+outY[1] <= outY[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+outY[2] <= outY[2]~1.DB_MAX_OUTPUT_PORT_TYPE
+outY[3] <= outY[3]~0.DB_MAX_OUTPUT_PORT_TYPE
+outZ[0] <= registerZ:registerZ.port3
+outZ[1] <= registerZ:registerZ.port3
+outZ[2] <= registerZ:registerZ.port3
+outZ[3] <= registerZ:registerZ.port3
+inX[0] <= inX[0]~3.DB_MAX_OUTPUT_PORT_TYPE
+inX[1] <= inX[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+inX[2] <= inX[2]~1.DB_MAX_OUTPUT_PORT_TYPE
+inX[3] <= inX[3]~0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= count[0]~2.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~0.DB_MAX_OUTPUT_PORT_TYPE
+controllerInstruction[0] <= controllerInstruction[0]~2.DB_MAX_OUTPUT_PORT_TYPE
+controllerInstruction[1] <= controllerInstruction[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+controllerInstruction[2] <= controllerInstruction[2]~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|counter:comb_3
+clock => counterOut[0]~reg0.CLK
+clock => counterOut[1]~reg0.CLK
+clock => counterOut[2]~reg0.CLK
+counterOut[0] <= counterOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterOut[1] <= counterOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counterOut[2] <= counterOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|memory:comb_4
+count[0] => Mux0.IN10
+count[0] => Mux1.IN10
+count[0] => Mux2.IN10
+count[0] => Mux3.IN10
+count[1] => Mux0.IN9
+count[1] => Mux1.IN9
+count[1] => Mux2.IN9
+count[1] => Mux3.IN9
+count[1] => Mux4.IN5
+count[1] => Mux5.IN5
+count[1] => Mux6.IN5
+count[2] => Mux0.IN8
+count[2] => Mux1.IN8
+count[2] => Mux2.IN8
+count[2] => Mux3.IN8
+count[2] => Mux4.IN4
+count[2] => Mux5.IN4
+count[2] => Mux6.IN4
+inX[0] <= inX[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+inX[1] <= inX[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+inX[2] <= <GND>
+inX[3] <= <GND>
+controllerInstruction[0] <= controllerInstruction[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controllerInstruction[1] <= controllerInstruction[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controllerInstruction[2] <= controllerInstruction[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controllerInstruction[3] <= <GND>
+
+
+|CPU|registerX:registerX
+clock => outX[0]~reg0.CLK
+clock => outX[1]~reg0.CLK
+clock => outX[2]~reg0.CLK
+clock => outX[3]~reg0.CLK
+instruction[0] => Mux0.IN4
+instruction[0] => Mux1.IN3
+instruction[0] => Mux2.IN3
+instruction[0] => Mux3.IN4
+instruction[1] => Mux0.IN3
+instruction[1] => Mux1.IN2
+instruction[1] => Mux2.IN2
+instruction[1] => Mux3.IN3
+instruction[2] => Mux0.IN2
+instruction[2] => Mux1.IN1
+instruction[2] => Mux2.IN1
+instruction[2] => Mux3.IN2
+inX[0] => Mux3.IN5
+inX[1] => Mux2.IN4
+inX[2] => Mux1.IN4
+inX[3] => Mux0.IN5
+outX[0] <= outX[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outX[1] <= outX[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outX[2] <= outX[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outX[3] <= outX[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|registerY:registerY
+clock => outY[0]~reg0.CLK
+clock => outY[1]~reg0.CLK
+clock => outY[2]~reg0.CLK
+clock => outY[3]~reg0.CLK
+instruction[0] => Mux0.IN4
+instruction[0] => Mux1.IN3
+instruction[0] => Mux2.IN3
+instruction[0] => Mux3.IN4
+instruction[1] => Mux0.IN3
+instruction[1] => Mux1.IN2
+instruction[1] => Mux2.IN2
+instruction[1] => Mux3.IN3
+instruction[2] => Mux0.IN2
+instruction[2] => Mux1.IN1
+instruction[2] => Mux2.IN1
+instruction[2] => Mux3.IN2
+outULA[0] => Mux3.IN5
+outULA[1] => Mux2.IN4
+outULA[2] => Mux1.IN4
+outULA[3] => Mux0.IN5
+outY[0] <= outY[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outY[1] <= outY[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outY[2] <= outY[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outY[3] <= outY[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|registerZ:registerZ
+clock => outZ[0]~reg0.CLK
+clock => outZ[1]~reg0.CLK
+clock => outZ[2]~reg0.CLK
+clock => outZ[3]~reg0.CLK
+instruction[0] => Mux0.IN4
+instruction[0] => Mux1.IN3
+instruction[0] => Mux2.IN3
+instruction[0] => Mux3.IN4
+instruction[1] => Mux0.IN3
+instruction[1] => Mux1.IN2
+instruction[1] => Mux2.IN2
+instruction[1] => Mux3.IN3
+instruction[2] => Mux0.IN2
+instruction[2] => Mux1.IN1
+instruction[2] => Mux2.IN1
+instruction[2] => Mux3.IN2
+outY[0] => Mux3.IN5
+outY[1] => Mux2.IN4
+outY[2] => Mux1.IN4
+outY[3] => Mux0.IN5
+outZ[0] <= outZ[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outZ[1] <= outZ[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outZ[2] <= outZ[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outZ[3] <= outZ[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|controller:cont
+clock => Tula~reg0.CLK
+clock => Tz[0]~reg0.CLK
+clock => Tz[1]~reg0.CLK
+clock => Ty[0]~reg0.CLK
+clock => Ty[1]~reg0.CLK
+clock => Tx[0]~reg0.CLK
+clock => Tx[1]~reg0.CLK
+count[0] => Mux0.IN8
+count[0] => Mux1.IN8
+count[0] => Mux2.IN8
+count[0] => Mux3.IN8
+count[0] => Mux4.IN8
+count[0] => Mux5.IN8
+count[0] => Decoder0.IN2
+count[1] => Mux0.IN7
+count[1] => Mux1.IN7
+count[1] => Mux2.IN7
+count[1] => Mux3.IN7
+count[1] => Mux4.IN7
+count[1] => Mux5.IN7
+count[1] => Decoder0.IN1
+count[2] => Mux0.IN6
+count[2] => Mux1.IN6
+count[2] => Mux2.IN6
+count[2] => Mux3.IN6
+count[2] => Mux4.IN6
+count[2] => Mux5.IN6
+count[2] => Decoder0.IN0
+Tx[0] <= Tx[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Tx[1] <= Tx[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Ty[0] <= Ty[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Ty[1] <= Ty[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Tz[0] <= Tz[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Tz[1] <= Tz[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Tula <= Tula~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|ULA:ula
+instruction => Decoder0.IN0
+A[0] => Add0.IN4
+A[1] => Add0.IN3
+A[2] => Add0.IN2
+A[3] => Add0.IN1
+B[0] => Add0.IN8
+B[1] => Add0.IN7
+B[2] => Add0.IN6
+B[3] => Add0.IN5
+ULAout[0] <= ULAout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[1] <= ULAout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[2] <= ULAout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ULAout[3] <= ULAout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

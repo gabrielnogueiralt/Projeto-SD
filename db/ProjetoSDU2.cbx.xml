@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ProjetoSDU2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|controller:cont|lpm_mux:Mux4" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerX:registerX|lpm_mux:Mux2" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerY:registerY|lpm_mux:Mux0" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|controller:cont|lpm_mux:Mux5" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux0" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerX:registerX|lpm_mux:Mux3" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerY:registerY|lpm_mux:Mux1" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux1" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerY:registerY|lpm_mux:Mux2" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerZ:registerZ|lpm_mux:Mux0" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|controller:cont|lpm_mux:Mux3" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux2" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux6" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerX:registerX|lpm_mux:Mux1" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerY:registerY|lpm_mux:Mux3" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerZ:registerZ|lpm_mux:Mux1" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|controller:cont|lpm_mux:Mux0" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux3" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerZ:registerZ|lpm_mux:Mux2" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|controller:cont|lpm_mux:Mux1" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux4" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerZ:registerZ|lpm_mux:Mux3" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|controller:cont|lpm_mux:Mux2" CBX_FILE_NAME="mux_5oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|memory:comb_4|lpm_mux:Mux5" CBX_FILE_NAME="mux_0oc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU|registerX:registerX|lpm_mux:Mux0" CBX_FILE_NAME="mux_5oc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
